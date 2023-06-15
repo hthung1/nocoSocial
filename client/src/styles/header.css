@@ -1,0 +1,229 @@
+
+
+/* .header_container {
+   
+} */
+
+
+.container-nav {
+    width: 100%;
+    background-color: var(--color-white);
+    /* padding: 0.7rem 0; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 5.4rem;
+}
+
+.container-nav .header_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+/* .header .navbar{
+    width: 100%;
+    height: 100%;
+} */
+
+.log {
+    color: var(--color-dark);
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 600;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+/* ----------- Header Menu ---------- */
+.header .menu li{
+    opacity: 0.5;
+}
+.header .menu li.active{
+    opacity: 1;
+}
+.header .menu .material-icons{
+    font-size: 30px;
+}
+.header .menu .dropdown-menu{
+    position: absolute;
+    left: inherit;
+    right: 0;
+}
+.header .menu label{
+    cursor: pointer;
+}
+
+.header .menu .notify_length{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* ---------- Header Search -------- */
+/* .header .search_form{
+    position: relative;
+}
+.header .search_form #search{
+    background: #fafafa;
+    border: 1px solid #ddd;
+    min-width: 250px;
+    width: 100%;
+    outline: none;
+    text-indent: 5px;
+    border-radius: 3px;
+}
+.header .search_form .search_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    pointer-events: none;
+}
+.header .search_form .search_icon .material-icons{
+    font-size: 14px;
+    transform: translateY(3px);
+}
+.header .search_form .close_search{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    color: crimson;
+}
+.header .search_form .users{
+    position: absolute;
+    width: 100%;
+    min-width: 250px;
+    background: #fafafa;
+    max-height: calc(100vh - 150px);
+    overflow: auto;
+    margin-top: 3px;
+}
+.header .search_form .loading{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+} */
+
+/* search bar */
+.search-bar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+.search-bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    
+}
+
+.container-nav .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+ .users{
+    position: absolute;
+    width: 32%;
+    min-width: 250px;
+    background: #fafafa;
+    max-height: calc(100vh - 150px);
+    overflow: auto;
+    margin-top: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+   
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+}
+
+
+/* User search */
+.users .user-search-item {
+    
+}
+
+.users .user-search-item:not(:first-child){
+    border-bottom: 1px solid rgb(203, 203, 203);
+    overflow: hidden;
+}
+
+.users .user-search-item:first-child{
+    border-bottom: 1px solid rgb(219,219,219);
+    overflow: hidden;
+}
+
+
+.users .user-search-item a {
+    text-decoration: none;
+    color: var(--color-dark);
+} 
+
+.users .user-search-item .ml-1 {
+    margin-left: 15px !important;
+}
+
+.users .user-search-item .ml-1 span {
+    font-weight: 500;
+}
+
+.list-user-menu {
+    margin-left: 15px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 5px !important;
+    margin-top: 14px;
+}
+
+.nav-noti:hover i {
+    color: var(--color-primary);
+}
+
+.nav-noti  i {
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    margin-left: 2rem;
+    position: relative;
+}
+
+.nav-noti  i .notification-count {
+    background-color: var(--color-danger);
+    color: white;
+    font-size: 0.65rem;
+    width: fit-content;
+    border-radius: 0.8rem;
+    padding: 0.1rem 0.18rem;
+    position: absolute;
+    top: -0.3rem;
+    right: -0.5rem ;
+}

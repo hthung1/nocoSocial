@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+.status_modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    background: #0008;
+    z-index: 11;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* ======================= */
+::selection{
+    color: #fff;
+    background: #1da1f2;
+  }
+/* ========================= */
+.status_modal form{
+    /* max-width: 450px;
+    width: 100%;
+    background: white;
+    margin: 110px auto;
+    padding: 20px;
+    border-radius: 5px; */
+
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    margin: 110px auto;
+    border-radius: 15px;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    /* position: relative; */
+}
+.status_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    transform: translateY(-13px);
+    /* padding-bottom: 10px; */
+} 
+
+.top-post .post-span-icon {
+    list-style: none;
+    color: #1da1f2;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background 0.2s ease;
+    
+}
+
+.top-post .post-out--icon {
+      padding: 4px;
+}
+  
+.top-post span:hover {
+      background: #e7f5fe;
+}
+
+.top-post h5 {
+    opacity: 0.8;
+    
+}
+
+/* ===== */
+
+.status-input-box {
+    /* padding-top: 20px; */
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+.status_body textarea{
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+}
+
+.status-input-box .privacy{
+    color: #1da1f2;
+    margin: 15px 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.privacy:hover, .icons li:hover{
+    background: #e7f5fe;
+  }
+  .privacy i{
+    font-size: 16px;
+  }
+  .privacy span{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 7px;
+  }
+
+/*  =================*/
+
+/* .status_body .input_images{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+} */
+.post-bottom{
+    display: flex;
+    margin-top: 13px;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+
+  .post-bottom .icons{
+    display: inline-flex;
+  }
+
+  .icons li {
+    list-style: none;
+    color: #1da1f2;
+    font-size: 18px;
+    margin: 0 2px;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+  }
+
+  .icons li i{
+    list-style: none;
+    color: #1da1f2;
+    font-size: 18px;
+    margin: 0 2px;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+  }
+
+/*  */
+.status_body .input_images i{
+    list-style: none;
+    color: #1da1f2;
+    font-size: 18px;
+    margin: 0 2px;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+/* .status_body .input_images i:hover, .status_body .file_upload i:hover  {
+    background-color: red;
+} */
+
+.uil-capture:hover {
+    background: #e7f5fe;
+}
+
+.fa-file-image:hover {
+    background: #e7f5fe;
+}
+/* ===== */
+.status_body .input_images .file_upload{
+    overflow: hidden;
+    margin: 0 10px;
+    position: relative;
+}
+.status_body .input_images .file_upload #file{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+}
+.status_body .show_images{
+    max-height: 270px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    place-items: center;
+    padding: 10px 0;
+    grid-gap: 10px;
+}
+.status_body .show_images #file_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.status_body .show_images #file_img img,
+.status_body .show_images #file_img video{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+.status_body .show_images #file_img span{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 4;
+    background: white;
+    color: crimson;
+    padding: 3px 7px;
+    border: 1px solid crimson;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.status_body .stream span{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    color: crimson;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.status_body .dropdown-menu{
+    transform: translate3d(-153px, -190px, 0px) !important;
+    z-index: 2;
+}
+
+
+
+.status_footer .btn-post{
+    padding: 9px 25px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  .status_footer button:hover{
+    background: #0d8bd9;
+  }
